@@ -1,7 +1,6 @@
-
 import React from 'react';
 import { Github, Mail, Linkedin } from 'lucide-react';
-import { Button } from "@/components/ui/button";
+import { Button } from '@/components/ui/button';
 
 const Footer = () => {
   return (
@@ -12,7 +11,9 @@ const Footer = () => {
             <Button
               variant="ghost"
               size="sm"
-              onClick={() => window.open('https://github.com/yourusername', '_blank')}
+              onClick={() =>
+                window.open('https://github.com/bullseye405', '_blank')
+              }
               className="hover:bg-accent text-foreground"
             >
               <Github className="h-4 w-4 mr-2" />
@@ -21,7 +22,9 @@ const Footer = () => {
             <Button
               variant="ghost"
               size="sm"
-              onClick={() => window.open('mailto:your.email@example.com', '_blank')}
+              onClick={() =>
+                window.open('mailto:bullseye405@gmail.com', '_blank')
+              }
               className="hover:bg-accent text-foreground"
             >
               <Mail className="h-4 w-4 mr-2" />
@@ -30,7 +33,12 @@ const Footer = () => {
             <Button
               variant="ghost"
               size="sm"
-              onClick={() => window.open('https://linkedin.com/in/yourprofile', '_blank')}
+              onClick={() =>
+                window.open(
+                  'https://www.linkedin.com/in/samir-prajapati-b9b589174/',
+                  '_blank'
+                )
+              }
               className="hover:bg-accent text-foreground"
             >
               <Linkedin className="h-4 w-4 mr-2" />
@@ -39,8 +47,11 @@ const Footer = () => {
           </div>
           <div className="text-sm text-muted-foreground space-y-2">
             <p>Built with React, TypeScript, and Tailwind CSS</p>
-            <p>Designed & Developed by Your Name</p>
-            <p className="text-xs">© 2024 PhraseLock. A portfolio project demonstrating secure password generation.</p>
+            <p>Designed & Developed by Samir Prajapati</p>
+            <p className="text-xs">
+              © 2025 PhraseLock. A portfolio project demonstrating secure
+              password generation.
+            </p>
           </div>
         </div>
       </div>

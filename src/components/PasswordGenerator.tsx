@@ -8,6 +8,7 @@ import { useToast } from "@/hooks/use-toast";
 import PasswordStrengthIndicator from './PasswordStrengthIndicator';
 import { generatePasswordFromSentence } from '@/utils/passwordGenerator';
 import { calculatePasswordStrength } from '@/utils/passwordStrength';
+import { handlePasswordGenerate } from '@/utils/passwordGeneratorOriginal';
 
 const PasswordGenerator = () => {
   const [sentence, setSentence] = useState('');
@@ -18,7 +19,8 @@ const PasswordGenerator = () => {
 
   useEffect(() => {
     if (sentence.trim()) {
-      const password = generatePasswordFromSentence(sentence);
+      // const password = generatePasswordFromSentence(sentence);
+      const password = handlePasswordGenerate(sentence)
       setGeneratedPassword(password);
       const strength = calculatePasswordStrength(password);
       setPasswordStrength(strength);

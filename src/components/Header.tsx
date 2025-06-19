@@ -1,8 +1,9 @@
 
-import React from 'react';
-import { Moon, Sun, Github } from 'lucide-react';
 import { Button } from "@/components/ui/button";
+import { Github, Moon, Sun } from 'lucide-react';
 import { useTheme } from './ThemeProvider';
+
+const GITHUB_URL = 'https://github.com/bullseye405/sentence-secret-keeper'
 
 const Header = () => {
   const { theme, setTheme } = useTheme();
@@ -29,7 +30,7 @@ const Header = () => {
           <Button
             variant="ghost"
             size="icon"
-            onClick={() => window.open('https://github.com/yourusername/phraselock', '_blank')}
+            onClick={() => window.open(GITHUB_URL, '_blank')}
             className="hover:bg-accent"
           >
             <Github className="h-5 w-5" />
