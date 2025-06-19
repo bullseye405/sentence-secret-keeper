@@ -1,3 +1,4 @@
+
 import React from 'react';
 import { Key, Shield, Zap, Lock } from 'lucide-react';
 import PasswordGenerator from '@/components/PasswordGenerator';
@@ -21,9 +22,12 @@ const Index = () => {
             <span className="bg-gradient-to-r from-blue-600 to-purple-600 bg-clip-text text-transparent">PhraseLock</span>
           </h1>
           
+          <h2 className="text-2xl md:text-3xl font-semibold text-gray-800 mb-4">
+            Generate secure passwords effortlessly
+          </h2>
+          
           <p className="text-xl text-gray-600 mb-8 max-w-3xl mx-auto leading-relaxed">
-            Transform any memorable sentence into a secure, unique password. 
-            Easy to remember, impossible to crack.
+            No more forgetting. Type a sentence—get a secure password instantly.
           </p>
           
           <div className="flex flex-wrap justify-center gap-8 mb-12">

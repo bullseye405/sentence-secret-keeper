@@ -50,6 +50,15 @@ const PasswordGenerator = () => {
 
   return (
     <div className="w-full max-w-2xl mx-auto space-y-6">
+      <div className="text-center mb-6">
+        <h3 className="text-2xl font-bold text-gray-900 mb-2">
+          Create a Secure Password from a Sentence
+        </h3>
+        <p className="text-gray-600">
+          Type something memorable. We'll turn it into a strong password that's easy to remember but hard to crack.
+        </p>
+      </div>
+      
       <Card className="border-2 border-dashed border-gray-200 hover:border-blue-300 transition-colors duration-300">
         <CardContent className="p-6">
           <div className="space-y-4">
