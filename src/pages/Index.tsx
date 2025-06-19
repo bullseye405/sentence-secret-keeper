@@ -2,12 +2,16 @@
 import React from 'react';
 import { Key, Shield, Zap, Lock } from 'lucide-react';
 import PasswordGenerator from '@/components/PasswordGenerator';
+import Header from '@/components/Header';
+import Footer from '@/components/Footer';
 
 const Index = () => {
   return (
-    <div className="min-h-screen bg-gradient-to-br from-blue-50 via-white to-purple-50">
+    <div className="min-h-screen bg-gradient-to-br from-blue-50 via-white to-purple-50 dark:from-gray-900 dark:via-gray-800 dark:to-purple-900">
+      <Header />
+      
       {/* Hero Section */}
-      <div className="container mx-auto px-4 py-16">
+      <div className="container mx-auto px-4 py-16 pt-24">
         <div className="text-center mb-16">
           <div className="flex justify-center mb-6">
             <div className="relative">
@@ -18,15 +22,15 @@ const Index = () => {
             </div>
           </div>
           
-          <h1 className="text-5xl md:text-6xl font-bold text-gray-900 mb-6 animate-fade-in">
+          <h1 className="text-5xl md:text-6xl font-bold text-gray-900 dark:text-white mb-6 animate-fade-in">
             <span className="bg-gradient-to-r from-blue-600 to-purple-600 bg-clip-text text-transparent">PhraseLock</span>
           </h1>
           
-          <h2 className="text-2xl md:text-3xl font-semibold text-gray-800 mb-4">
+          <h2 className="text-2xl md:text-3xl font-semibold text-gray-800 dark:text-gray-200 mb-4">
             Generate secure passwords effortlessly
           </h2>
           
-          <p className="text-xl text-gray-600 mb-8 max-w-3xl mx-auto leading-relaxed">
+          <p className="text-xl text-gray-600 dark:text-gray-300 mb-8 max-w-3xl mx-auto leading-relaxed">
             No more forgetting. Type a sentence—get a secure password instantly.
           </p>
           
@@ -116,6 +120,8 @@ const Index = () => {
           <p>Your privacy is our priority. All password generation happens locally in your browser.</p>
         </div>
       </div>
+      
+      <Footer />
     </div>
   );
 };
