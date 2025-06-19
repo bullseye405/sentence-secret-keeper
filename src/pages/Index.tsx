@@ -1,4 +1,3 @@
-
 import React from 'react';
 import { Key, Shield, Zap, Lock } from 'lucide-react';
 import PasswordGenerator from '@/components/PasswordGenerator';
@@ -19,9 +18,7 @@ const Index = () => {
           </div>
           
           <h1 className="text-5xl md:text-6xl font-bold text-gray-900 mb-6 animate-fade-in">
-            Turn Your
-            <span className="bg-gradient-to-r from-blue-600 to-purple-600 bg-clip-text text-transparent"> Thoughts </span>
-            Into Strong Passwords
+            <span className="bg-gradient-to-r from-blue-600 to-purple-600 bg-clip-text text-transparent">PhraseLock</span>
           </h1>
           
           <p className="text-xl text-gray-600 mb-8 max-w-3xl mx-auto leading-relaxed">
