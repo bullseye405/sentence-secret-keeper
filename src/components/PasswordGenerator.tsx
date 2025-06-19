@@ -50,20 +50,11 @@ const PasswordGenerator = () => {
 
   return (
     <div className="w-full max-w-2xl mx-auto space-y-6">
-      <div className="text-center mb-6">
-        <h3 className="text-2xl font-bold text-gray-900 mb-2">
-          Create a Secure Password from a Sentence
-        </h3>
-        <p className="text-gray-600">
-          Type something memorable. We'll turn it into a strong password that's easy to remember but hard to crack.
-        </p>
-      </div>
-      
-      <Card className="border-2 border-dashed border-gray-200 hover:border-blue-300 transition-colors duration-300">
+      <Card className="border-2 border-dashed border-gray-200 dark:border-gray-700 hover:border-blue-300 dark:hover:border-blue-600 transition-colors duration-300 bg-white dark:bg-gray-800">
         <CardContent className="p-6">
           <div className="space-y-4">
             <div>
-              <label htmlFor="sentence" className="block text-sm font-medium text-gray-700 mb-2">
+              <label htmlFor="sentence" className="block text-sm font-medium text-gray-700 dark:text-gray-300 mb-2">
                 Enter your memorable sentence
               </label>
               <Input
@@ -72,27 +63,27 @@ const PasswordGenerator = () => {
                 placeholder="e.g., I love coffee in the morning at 7am!"
                 value={sentence}
                 onChange={(e) => setSentence(e.target.value)}
-                className="text-lg py-3 transition-all duration-300 focus:ring-2 focus:ring-blue-500"
+                className="text-lg py-3 transition-all duration-300 focus:ring-2 focus:ring-blue-500 bg-white dark:bg-gray-700 border-gray-300 dark:border-gray-600 text-gray-900 dark:text-white placeholder-gray-500 dark:placeholder-gray-400"
               />
             </div>
             
             {generatedPassword && (
               <div className="space-y-4 animate-fade-in">
                 <div>
-                  <label className="block text-sm font-medium text-gray-700 mb-2">
+                  <label className="block text-sm font-medium text-gray-700 dark:text-gray-300 mb-2">
                     Generated Password
                   </label>
                   <div className="flex items-center space-x-2">
-                    <div className="flex-1 p-3 bg-gray-50 border rounded-lg font-mono text-lg break-all">
+                    <div className="flex-1 p-3 bg-gray-50 dark:bg-gray-700 border border-gray-200 dark:border-gray-600 rounded-lg font-mono text-lg break-all text-gray-900 dark:text-white">
                       {generatedPassword}
                     </div>
                     <Button
                       onClick={copyToClipboard}
                       variant="outline"
                       size="icon"
-                      className="shrink-0 hover:bg-blue-50 transition-colors"
+                      className="shrink-0 hover:bg-blue-50 dark:hover:bg-blue-900/50 transition-colors border-gray-200 dark:border-gray-600 bg-white dark:bg-gray-800"
                     >
-                      {copied ? <Check className="h-4 w-4 text-green-600" /> : <Copy className="h-4 w-4" />}
+                      {copied ? <Check className="h-4 w-4 text-green-600" /> : <Copy className="h-4 w-4 text-gray-600 dark:text-gray-400" />}
                     </Button>
                   </div>
                 </div>

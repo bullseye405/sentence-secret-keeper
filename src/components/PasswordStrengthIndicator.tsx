@@ -51,7 +51,7 @@ const PasswordStrengthIndicator = ({ strength }: PasswordStrengthIndicatorProps)
   return (
     <div className="space-y-2">
       <div className="flex items-center justify-between">
-        <span className="text-sm font-medium text-gray-700">Password Strength</span>
+        <span className="text-sm font-medium text-gray-700 dark:text-gray-300">Password Strength</span>
         <div className="flex items-center space-x-2">
           {getIcon()}
           <span className={`text-sm font-semibold ${strength.color}`}>
@@ -62,7 +62,7 @@ const PasswordStrengthIndicator = ({ strength }: PasswordStrengthIndicatorProps)
       <div className="relative">
         <Progress 
           value={(strength.score / 5) * 100} 
-          className="h-2"
+          className="h-2 bg-gray-200 dark:bg-gray-700"
         />
         <div 
           className={`absolute top-0 left-0 h-2 rounded-full transition-all duration-500 ${getProgressColor()}`}

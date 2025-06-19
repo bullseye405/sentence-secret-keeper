@@ -13,7 +13,7 @@ const Footer = () => {
               variant="ghost"
               size="sm"
               onClick={() => window.open('https://github.com/yourusername', '_blank')}
-              className="hover:bg-accent"
+              className="hover:bg-accent text-foreground"
             >
               <Github className="h-4 w-4 mr-2" />
               GitHub
@@ -22,7 +22,7 @@ const Footer = () => {
               variant="ghost"
               size="sm"
               onClick={() => window.open('mailto:your.email@example.com', '_blank')}
-              className="hover:bg-accent"
+              className="hover:bg-accent text-foreground"
             >
               <Mail className="h-4 w-4 mr-2" />
               Contact
@@ -31,7 +31,7 @@ const Footer = () => {
               variant="ghost"
               size="sm"
               onClick={() => window.open('https://linkedin.com/in/yourprofile', '_blank')}
-              className="hover:bg-accent"
+              className="hover:bg-accent text-foreground"
             >
               <Linkedin className="h-4 w-4 mr-2" />
               LinkedIn
